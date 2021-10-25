@@ -1,0 +1,49 @@
+.SearchShip {
+  width: 773px;
+  border-radius: 33px;
+  background: var(--light-hard);
+  position: relative;
+  cursor: pointer;
+  @media (max-width: 1680px) {
+    width: 500px;
+  }
+  @media (max-width: 1300px) {
+    margin-top: 10px;
+    width: 400px;
+  }
+  @media (max-width: 411px) {
+    margin-top: 20px;
+    width: 330px;
+  }
+
+  &__input-field {
+    display: inline-block;
+    padding: 5px 30px;
+    input {
+      outline: none;
+      border: none;
+      display: block;
+      line-height: 1.2em;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+    label {
+      display: block;
+      padding: 5px 0px;
+      font-size: var(--font-size-10);
+      color: var(--dark-hard);
+      text-transform: var(--text-transform-uppercase);
+      letter-spacing: var(--character-spacing-1-25);
+      font-weight: var(--font-weight-bold);
+    }
+  }
+  &__search-results {
+    position: absolute;
+    padding: 24px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    background: var(--light-hard);
+    border-radius: 32px;
+  }
+}

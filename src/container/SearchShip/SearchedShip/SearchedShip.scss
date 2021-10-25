@@ -1,0 +1,27 @@
+.SearchedShip {
+  display: flex;
+  width: 432px;
+  align-items: center;
+  padding-bottom: 10px;
+
+  @media (max-width: 1680px) {
+    width: 300px;
+  }
+
+  &__image {
+    border-radius: 8px;
+    border: 2px solid var(--light-medium);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    &:hover {
+      border-color: var(--primary);
+    }
+  }
+  &__name {
+    margin-left: 10px;
+    font-size: var(--font-size-16);
+    color: var(--dark-hard);
+    letter-spacing: var(--character-spacing-0-5);
+  }
+}

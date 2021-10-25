@@ -1,0 +1,16 @@
+.Home {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 16px;
+  row-gap: 70px;
+  padding: 72px 0px;
+
+  @media (max-width: 1210px) {
+    grid-template-columns: 50% 50%;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 100%;
+    row-gap: 50px;
+    padding: 20px 0px;
+  }
+}

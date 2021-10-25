@@ -1,0 +1,55 @@
+.Ship {
+  padding: 32px;
+  background: transparent linear-gradient(180deg, #f5f5f538 0%, #f5f5f500 100%) 0% 0% no-repeat padding-box;
+  border-radius: 32px;
+  color: var(--light-medium);
+  @media (max-width: 411px) {
+    padding: 16px;
+  }
+
+  &__image-wrapper {
+    margin: 0px auto;
+    border: 2px solid var(--primary);
+    border-radius: 32px;
+    height: 269px;
+    @media (max-width: 768px) {
+      // width: 400px;
+      height: 300px;
+    }
+    @media (max-width: 411px) {
+      max-width: 311px;
+      height: 175px;
+    }
+    margin-bottom: 16px;
+    img {
+      width: 100%;
+      height: 265px;
+      border-radius: 32px;
+      @media (max-width: 768px) {
+        height: 300px;
+      }
+      @media (max-width: 411px) {
+        height: 175px;
+      }
+    }
+  }
+  &__details-year-built {
+    color: var(--dark_soft);
+    letter-spacing: var(--character-spacing-0-15);
+    font-size: var(--font-size-15);
+    margin: 16px 0px;
+  }
+  &__name {
+    color: var(--primary);
+    font-size: var(--font-size-20);
+  }
+  &__detail {
+    font-size: var(--font-size-16);
+  }
+  &__add-favouite-wrapper {
+    margin: 32px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

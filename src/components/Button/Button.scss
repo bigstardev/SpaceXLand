@@ -1,0 +1,14 @@
+.Button {
+  color: var(--primary);
+  border-radius: 24px;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  padding: 15px 30px;
+  font-size: var(--font-size-14);
+  text-transform: var(--text-transform-uppercase);
+  letter-spacing: var(--character-spacing-0-25);
+  &:hover {
+    color: var(--light-medium);
+    background: var(--primary);
+  }
+}

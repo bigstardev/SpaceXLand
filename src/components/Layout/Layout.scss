@@ -1,0 +1,43 @@
+$top-navbar-height: 128px;
+$top-navbar-margin: 45px;
+$top-navbar-z-index: 2;
+.Layout {
+  position: relative;
+
+  @media (min-width: 1680px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1680px;
+  }
+  @media (max-width: 1680px) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @media (max-width: 992px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (max-width: 768px) {
+    margin: 0px 50px;
+  }
+  @media (max-width: 501px) {
+    margin: 0px 20px;
+  }
+
+  &__content {
+    min-height: calc(100vh - #{$top-navbar-height + $top-navbar-margin});
+    padding: 72px 0px;
+  }
+
+  &__top-navbar-wrapper {
+    position: sticky;
+    top: $top-navbar-margin;
+    z-index: $top-navbar-z-index;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      position: relative;
+    }
+  }
+}

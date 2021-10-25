@@ -1,0 +1,17 @@
+.Action-button {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  cursor: pointer;
+  padding: 12px 13px 10px 13px;
+  border-radius: 50%;
+}
+
+.Search {
+  color: var(--light-medium);
+  background-color: var(--secondary);
+}
+.Close {
+  color: var(--dark-hard);
+  background-color: var(--primary);
+}
